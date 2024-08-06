@@ -1,0 +1,101 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #444;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background: #555;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Grid Layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 15px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .column {
+        flex: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    .column {
+        flex: 100%;
+    }
+}
